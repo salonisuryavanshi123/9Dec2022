@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array of Object</title>
+        <link href="./css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <h1>TOP NEWS</h1>
+        <h1 class="n1h1"></h1>
+        <p class="n1p1"></p>
+        <span class="n1d1"></span>
+
+        <h1 data-myheading="myheading"></h1>
+        <p data-p2n="p2n"></p>
+       
+
+        <script src="./js/script.js"></script>
+        <script>
+           let _newsall = [
+                            {
+                                //1. Property:Value
+                                heading:'Markets opening alert: Sensex in green at 62,679, Nifty rises to 18,660.',
+                                published:'Published on Dec 09, 2022 09:18 AM IST',
+                                detail:"The proposed class action filed late on Wednesday in San Francisco federal court said that after Twitter was taken over by Elon Musk, the world's richest person, it laid off 57% of its female workers compared to 47% of men. Twitter laid off roughly 3,700 employees in early November in a cost-cutting measure by Musk, and hundreds more subsequently resigned."
+                                //2. 
+                            },
+                            { 
+                                //1. Property:Value
+                                heading:"Four lessons from the BJP’s ceaseless Gujarat dominance",
+                                published:'Updated on Dec 09, 2022 08:53 AM IST',
+                                detail:"It was the much-touted Gujarat model of development that caught voters’ attention and dominated the election narrative in 2013 when the Bharatiya Janata Party (BJP) announced the candidature of Narendra Modi for the Prime Minister’s post."
+
+                            },
+                            {
+                                //1. Property:Value
+                                heading:"Saif Ali Khan, Kareena Kapoor, Soha Ali Khan, Saba Ali Khan celebrate Sharmila Tagore's birthday in Jaisalmer. See pics",
+
+                            },
+                            {
+
+                            },
+                            {
+                                
+                            }
+                        ]; //Array of Object
+
+                        //There are four ways to JS code
+
+                        //1. element.innerHTML
+
+                        document.querySelector('h1.n1h1').innerHTML = _newsall[0].heading;
+                        document.querySelector('p.n1p1').innerHTML = _newsall[0].published;
+                        document.querySelector('span.n1d1').innerHTML = _newsall[0].detail;
+
+
+                        //1. object.property
+
+                        //2. object["property"]
+
+                        //3. object[expression]
+                        let n2 = _newsall[1].heading;
+                        var p2 = _newsall[1].published;
+                        const d2 = _newsall[1].detail;
+                        //2. window.alert
+                        window.alert(n2);
+                        window.alert(p2);
+                        window.alert(d2);
+
+                        console.log(_newsall[2]);
+
+                        
+
+
+
+
+
+                        
+                        
+
+
+        </script>
+         
+    </body>
+</html>
